@@ -57,6 +57,19 @@ function Board() {
   }
 }
 
+function Game() {
+  return(
+    <>
+        <div >
+          <Board />
+        </div>
+        <div>
+          <ol>{}</ol>
+        </div>
+    </>
+  )
+}
+
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
@@ -82,4 +95,4 @@ const Footer = () => {
   return(<small className='footer'>&#169; 2023 Developed by Rukesh R.</small>)
 }
 
-export default Board;
+export default Game;
